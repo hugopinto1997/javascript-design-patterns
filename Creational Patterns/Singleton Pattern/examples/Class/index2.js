@@ -1,17 +1,17 @@
-import SingletonCounter from "./singletonCounter.js";
-import Counter from "./regularCounter.js";
+import SingletonCounter from "./singleton-counter.js";
+import Counter from "./regular-counter.js";
 
 const singletonCounter = new SingletonCounter(0);
 const regularCounter = new Counter(0);
 
 // Singleton State
-const singletonSpan = document.querySelector("#singleton");
-const nonSingletonSpan = document.querySelector("#non-singleton");
+const singletonSpan = document.querySelector("#singleton2");
+const nonSingletonSpan = document.querySelector("#non-singleton2");
 
 // Buttons
-const incrementBtn = document.querySelector("#increment");
-const decrementBtn = document.querySelector("#decrement");
-const resetBtn = document.querySelector("#resetBtn");
+const incrementBtn = document.querySelector("#increment2");
+const decrementBtn = document.querySelector("#decrement2");
+const resetBtn = document.querySelector("#resetBtn2");
 
 const handleCounterChange = () => {
   const event = new Event("updateUI");

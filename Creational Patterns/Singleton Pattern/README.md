@@ -10,26 +10,30 @@ Share a single global instance throughout our application.
 
 With the Singleton Pattern, we restrict the instantiation of certain classes to one single instance. This single instance is unmodifiable, and can be accessed globally throughout the application.
 
-For example, we can have a ```Counter``` singleton, which contains a ```getCount, increment```, and ```decrement``` method.
+For example, we can have a `Counter` singleton, which contains a `getCount, increment`, and `decrement` method.
 
 This singleton can be shared globally across multiple files within the application. The imports of this Singleton all reference the same instance.
 
-The ```increment``` method increments the value of counter by 1. Any time the increment method has been invoked anywhere in the application, thus changing the value of counter, the change is reflected throughout the entire application.
+The `increment` method increments the value of counter by 1. Any time the increment method has been invoked anywhere in the application, thus changing the value of counter, the change is reflected throughout the entire application.
 
 <br>
 
 ## Implementation
+
 In ES6, there are several ways of creating a Singleton.
 
 ### Classes
-Creating an ES6 singleton class ```(See examples/Class-Singleton)```.
+
+Creating an ES6 singleton class `(See examples/Class)`.
 
 ### Objects
-We can also create objects without having to create a class ```(See examples/Object-Singleton)```.
+
+We can also create objects without having to create a class `(See examples/Object)`.
 
 <br>
 
 ## Tradeoffs
+
 - Memory, Restricting instantiation to just one instance could potentially save a lot of memory space. Using space just for one instance.
 - Unnecesary: ES6 modules are singleton by default, we no longer need to explicitly create singleton to achieve this global, non-modifiable behavior.
 - Dependency hiding: When importing another module, it may not always be obvious that that module is importing a Singleton. This could lead to unexpected value modification within the Singleton, which would be reflected throughout the application.

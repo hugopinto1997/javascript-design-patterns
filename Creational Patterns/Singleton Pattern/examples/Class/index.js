@@ -1,8 +1,8 @@
-import SingletonCounter from "./singletonCounter.js";
-import Counter from "./regularCounter.js";
+import SingletonCounter from "./singleton-counter.js";
+import Counter from "./regular-counter.js";
 
-const singletonCounter = SingletonCounter;
-const regularCounter = Object.create(Counter);
+const singletonCounter = new SingletonCounter(0);
+const regularCounter = new Counter(0);
 
 // Singleton State
 const singletonSpan = document.querySelector("#singleton");
