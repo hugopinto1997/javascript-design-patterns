@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singleton Pattern - Class</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="index.js" type="module" defer></script>
+    <script src="index2.js" type="module" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-heading">
+        <input
+          id="increment"
+          class="btn"
+          type="button"
+          title="Increment"
+          value="Increment"
+        />
+        <input
+          id="decrement"
+          class="btn"
+          type="button"
+          title="Increment"
+          value="Decrement"
+        />
+      </div>
+      <p class="card-body">
+        <p>Counter (Singleton): <span id="singleton">0</span></p>
+        <p>Counter (Non Singleton): <span id="non-singleton">0</span></p>
+        <input type="button" class="btn mt-2" value="Reset" id="resetBtn">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-heading">
+        <input
+          id="increment2"
+          class="btn"
+          type="button"
+          title="Increment"
+          value="Increment"
+        />
+        <input
+          id="decrement2"
+          class="btn"
+          type="button"
+          title="Increment"
+          value="Decrement"
+        />
+      </div>
+      <p class="card-body">
+        <p>Counter (Singleton): <span id="singleton2">0</span></p>
+        <p>Counter (Non Singleton): <span id="non-singleton2">0</span></p>
+        <input type="button" class="btn mt-2" value="Reset" id="resetBtn2">
+      </div>
+    </div>
+  </body>
+</html>
