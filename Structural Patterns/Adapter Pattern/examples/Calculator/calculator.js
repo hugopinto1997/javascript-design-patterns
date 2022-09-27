@@ -1,0 +1,29 @@
+// Initial version
+// class Calculator {
+//   operation(num1, num2, operation) {
+//     switch (operation) {
+//       case "multiplication":
+//         return num1 * num2;
+//       case "division":
+//         return num1 / num2;
+//       default:
+//         return NaN;
+//     }
+//   }
+// }
+
+// Current version
+class Calculator {
+    add(num1, num2) {
+      return num1 + num2;
+    }
+    div(num1, num2) {
+      return num1 / num2;
+    }
+    mult(num1, num2) {
+      return num1 * num2;
+    }
+  }
+  
+
+export default Calculator;
