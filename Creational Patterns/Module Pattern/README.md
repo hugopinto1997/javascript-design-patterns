@@ -1,6 +1,6 @@
 # Module Pattern
 
-**Pattern Type**: Creational and structural.
+**Pattern Type**: Creational and Structural.
 
 Split up your code into smaller and reusable pieces.
 
@@ -31,5 +31,13 @@ In node, you can use ES2015/ES6 modules either by:
 
 ## Tradeoffs
 
-- Encapsulation: _One of the Object Oriented Programming Pillars_. The values within a module are scoped to that specific module. Values that are not explicitly exported aren't accesible outside of the module.
-- Reusability: We can reuse modules throughout our application.
+- **Encapsulation**: _One of the Object Oriented Programming Pillars_. The values within a module are scoped to that specific module. Values that are not explicitly exported aren't accesible outside of the module.
+- **Reusability**: We can reuse modules throughout our application.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Module Pattern](https://www.patterns.dev/posts/classic-design-patterns/#modulepatternjavascript)
+- [Patterns.dev | Module Pattern](https://www.patterns.dev/posts/module-pattern/)
+- [FrontendMasters Design Patterns Workshop | Module Pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/module-pattern)
