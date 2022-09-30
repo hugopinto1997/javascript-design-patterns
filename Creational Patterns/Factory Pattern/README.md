@@ -52,3 +52,11 @@ The factory pattern can be useful if we're creating relatively complex and confi
 
 - **Don't Repeat Yourself (DRY)**: The factory pattern is useful when we have to create multiple smaller objects that share the same properties. A factory function can easily return a custom object depending on the current environment, or user-specific configuration.
 - **Not really a pattern**: In JavaScript, the factory pattern isn't much more than a function that returns an object without using the new keyword. ES6 arrow functions allow us to create small factory functions that implicitly return an object each time. However, in many cases it may be more memory efficient to create new instances instead of new objects each time.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Factory Pattern](https://www.patterns.dev/posts/classic-design-patterns/#factorypatternjavascript)
+- [Patterns.dev | Factory Pattern](https://www.patterns.dev/posts/factory-pattern/)
+- [FrontendMasters Design Patterns Workshop | Factory Pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/factory-pattern)
