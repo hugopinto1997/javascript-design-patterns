@@ -34,8 +34,16 @@ We can also create objects without having to create a class `(See examples/Objec
 
 ## Tradeoffs
 
-- Memory, Restricting instantiation to just one instance could potentially save a lot of memory space. Using space just for one instance.
-- Unnecesary: ES6 modules are singleton by default, we no longer need to explicitly create singleton to achieve this global, non-modifiable behavior.
-- Dependency hiding: When importing another module, it may not always be obvious that that module is importing a Singleton. This could lead to unexpected value modification within the Singleton, which would be reflected throughout the application.
-- Global Scoped Pollution: The global behavior of Singletons is essentially the same as a global variable. Global Scope Pollution can end up in accidentally overwriting the value of a global variable, which can lead to a lot of unexpected behavior. Usually, certain parts of the codebase modify the values within global state, whereas others consume that data. The order of execution here is important, understanding the data flow when using a global state can get very tricky as your application grows, and dozens of components rely on each other.
-- Testing: Since we can't create new instances each time, all tests rely on the modification to the global instance of the previous test. The order of the tests matter in this case, and one small modification can lead to an entire test suite failing. After testing, we need to reset the entire instance in order to reset the modifications made by the tests.
+- **Memory**: Restricting instantiation to just one instance could potentially save a lot of memory space. Using space just for one instance.
+- **Unnecesary**: ES6 modules are singleton by default, we no longer need to explicitly create singleton to achieve this global, non-modifiable behavior.
+- **Dependency hiding**: When importing another module, it may not always be obvious that that module is importing a Singleton. This could lead to unexpected value modification within the Singleton, which would be reflected throughout the application.
+- **Global scoped pollution**: The global behavior of Singletons is essentially the same as a global variable. Global Scope Pollution can end up in accidentally overwriting the value of a global variable, which can lead to a lot of unexpected behavior. Usually, certain parts of the codebase modify the values within global state, whereas others consume that data. The order of execution here is important, understanding the data flow when using a global state can get very tricky as your application grows, and dozens of components rely on each other.
+- **Testing**: Since we can't create new instances each time, all tests rely on the modification to the global instance of the previous test. The order of the tests matter in this case, and one small modification can lead to an entire test suite failing. After testing, we need to reset the entire instance in order to reset the modifications made by the tests.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Singleton Pattern](https://www.patterns.dev/posts/classic-design-patterns/#singletonpatternjavascript)
+- [Patterns.dev | Singleton Pattern](https://www.patterns.dev/posts/singleton-pattern/)
+- [FrontendMasters Design Patterns Workshop | Singleton Pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/singleton-pattern)
