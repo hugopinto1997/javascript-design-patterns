@@ -8,11 +8,12 @@ Transtalte an _interface_ for an object or class into an interface compatible wi
 
 ## Overview
 
-An __Adapter__ basically allows objects and classes to function together which normally coudn't due to their incompatible interfaces. The adapter makes the work to translate calls to its interfaces into calls to the original interface and the code required to achive this is quite minimal.
+An **Adapter** basically allows objects and classes to function together which normally coudn't due to their incompatible interfaces. The adapter makes the work to translate calls to its interfaces into calls to the original interface and the code required to achive this is quite minimal.
 
 One example you may be familiar with is the `jQuery.fn.css()` function, which let's you write styles for multiple browsers automatically, making this trivial to us and use a single syntax, which is adapted for the alctual browser supported functionalities behind the scenes.
 
-__Code Example__
+**Code Example**
+
 ```js
 // Cross browser opacity:
 // opacity: 0.9; Chrome 4+, FF2+, Saf3.1+, Opera 9+, IE9, iOS 3.2+, Android 2.1+
@@ -79,9 +80,9 @@ Imagine that we decided to create a `Calculator`. This calculator needs three at
 class Calculator {
   operation(num1, num2, operation) {
     switch (operation) {
-      case 'multiplication':
+      case "multiplication":
         return num1 * num2;
-      case 'division':
+      case "division":
         return num1 / num2;
       default:
         return NaN;
@@ -90,7 +91,7 @@ class Calculator {
 }
 ```
 
-Now, let's imagine that time passes and the project gets bigger and bigger. So, it's time for a __big refactor__ of the `Calculator` class.[[]]]]]]]
+Now, let's imagine that time passes and the project gets bigger and bigger. So, it's time for a **big refactor** of the `Calculator` class.[[]]]]]]]
 
 ```js
 class Calculator {
@@ -108,7 +109,7 @@ class Calculator {
 export default Calculator;
 ```
 
-As we can see the old `Calculator` is no longer compatible with our last code version. So, here is when we need to create an __adapter__.
+As we can see the old `Calculator` is no longer compatible with our last code version. So, here is when we need to create an **adapter**.
 
 ```js
 import Calculator from "./Calculator";
@@ -136,7 +137,7 @@ export default CalculatorAdapter;
 
 <br>
 
-And now, we can update our old code to use the __CalculatorAdapter__ and should work perfectly fine!
+And now, we can update our old code to use the **CalculatorAdapter** and should work perfectly fine!
 
 ```js
 import Calculator from "./Calculator";
@@ -155,6 +156,13 @@ console.log(sum); //output 4
 
 ## Tradeoffs
 
-- __SOLID__: It works with SOLID principles.
-- __Scalability__: We can add new adapters without affecting the existing code.
-- __Complexity__: Code complexity increases, due to the neccesity of introducing new interfaces and classes.****
+- **SOLID**: It works with SOLID principles.
+- **Scalability**: We can add new adapters without affecting the existing code.
+- **Complexity**: Code complexity increases, due to the neccesity of introducing new interfaces and classes.\*\*\*\*
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Adapter Pattern](https://www.patterns.dev/posts/classic-design-patterns/#wrapperpatternjquery)
+- [DEV Community | Adapter Pattern with JavaScript](https://dev.to/wecarrasco/adapter-pattern-with-javascript-4lgi)
