@@ -86,3 +86,11 @@ Perfect! We can access and modify the properties on the target object easily wit
 
 - **Control**: Proxies make it easy to add functionality when interacting with a certain object, such as validation, logging, formatting, notifications, debugging.
 - **Long handler execution**: Executing handlers on every object interaction could lead to performance issues.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Proxy Pattern](https://www.patterns.dev/posts/classic-design-patterns/#proxypatternjquery)
+- [Patterns.dev | Proxy Pattern](https://www.patterns.dev/posts/proxy-pattern/)
+- [FrontendMasters Design Patterns Workshop | Proxy Pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/proxy-pattern)
