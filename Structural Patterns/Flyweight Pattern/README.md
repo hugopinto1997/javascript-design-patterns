@@ -8,7 +8,7 @@ The flyweight pattern is a useful way to conserve memory when we're creating a l
 
 ## Overview
 
-The Flyweight pattern is a classical structural solution for optimizing code that is repetitive, slow, and inefficiently shares data. It aims to minimize the use of memory in an application by sharing as much data as possible with related objects (e.g application configuration, state, and so on).
+The Flyweight Pattern is a classical structural solution for optimizing code that is repetitive, slow, and inefficiently shares data. It aims to minimize the use of memory in an application by sharing as much data as possible with related objects (e.g application configuration, state, and so on).
 
 In practice, Flyweight data sharing can involve taking several similar objects or data constructs used by a number of objects and placing this data into a single external object. We can pass through this object to those depending on this data, rather than storing identical data across each one.
 
@@ -30,7 +30,7 @@ The benefit of this is that we're able to keep an eye on objects that have alrea
 
 ## Implementation
 
-As the Flyweight pattern hasn't been heavily used in JavaScript in recent years, many of the implementations we might use for inspiration come from the Java and C++ worlds.
+As the Flyweight Pattern hasn't been heavily used in JavaScript in recent years, many of the implementations we might use for inspiration come from the Java and C++ worlds.
 
 ### Implementing Classical Flyweights
 
@@ -184,7 +184,7 @@ const testFlyweight = () => {
 };
 ```
 
-### Simplest Flyweight - Books Flyweight
+### A Simpler Flyweight - Books Flyweight
 
 In our application, we want users to be able to add books. All books have a `title`, an `author`, and an `isbn` number! However, a library usually doesn't have just one copy of a book: it usually has multiple copies of the same book.
 
@@ -258,3 +258,10 @@ Although there are 5 copies, we only have 3 Book instances!
 - **Memory optimization**: The Flyweight Pattern reduces the memory footprint and saving RAM as the common properties are shared between objects using Intrinsic properties.
 - **Only for low memory**: If memory is not a concern, implementing Flyweight design can be overkill for the application.
 - **Complexity**: The pattern introduces code complexity.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Flyweight Pattern](https://www.patterns.dev/posts/classic-design-patterns/#detailflyweight)
+- [Patterns.dev | Flyweight Pattern](https://www.patterns.dev/posts/flyweight-pattern/)
