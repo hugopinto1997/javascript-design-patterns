@@ -132,3 +132,11 @@ It gets clear why it's called a prototype chain: when we try to access a propert
 
 - **Memory efficient**: The prototype chain allows us to access properties that aren't directly defined on the object itself, we can avoid duplication of methods and properties, thus reducing the amount of memory used.
 - **Readaibility**: When a class has been extended many times, it can be difficult to know where certain properties come from.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Prototype Pattern](https://www.patterns.dev/posts/classic-design-patterns/#prototypepatternjavascript)
+- [Patterns.dev | Prototype Pattern](https://www.patterns.dev/posts/prototype-pattern/)
+- [FrontendMasters Design Patterns Workshop | Prototype Pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/prototype-pattern)
