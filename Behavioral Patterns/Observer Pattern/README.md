@@ -1,12 +1,13 @@
 # Observer Pattern
 
-**Pattern Type:** Behavioral.
+**Pattern Type**: Behavioral.
 
 Use observables to notify subscribers when an event occurs.
 
 <br>
 
 ## Overview
+
 With the `Observer` pattern we have key concepts like:
 
 - An **observable object**, which can be observed by **subscribers** in order to notify them.
@@ -36,7 +37,6 @@ This differs from the Observer pattern as it allows any subscriber implementing 
 ## Implementation
 
 We can export a singleton Observer object, which contain a `notify`, `subscribe` and `unsubscribe` method.
-
 
 ```js
 const observers = [];
@@ -82,3 +82,11 @@ document.getElementById("my-button").addEventListener("click", () => {
 
 - **Separation of Concerns**: The observer objects aren't tightly coupled to the observable object, and can be (de)coupled at any time. The observable object is responsible for monitoring the events, while the observers simply handle the received data.
 - **Decreased performance**: Notifying all subscribers might take a significant amount of time if the observer handling becomes too complex, or if there are too many subscibers to notify.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Observer Pattern](https://www.patterns.dev/posts/classic-design-patterns/#observerpatternjavascript)
+- [Patterns.dev | Observer Pattern](https://www.patterns.dev/posts/observer-pattern/)
+- [FrontendMasters Design Patterns Workshop | Observer Pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/observer-pattern)
