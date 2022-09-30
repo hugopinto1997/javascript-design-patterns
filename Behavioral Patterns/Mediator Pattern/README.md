@@ -68,5 +68,12 @@ user2.send("Hey!");
 
 ## Tradeoffs
 
-- **Improves Communication**: It reduces the communication channels needed between objects or components in a system from many to many to just many to one.
-- **Single Point of Failure**: It can introduce a single point of failure. Placing a Mediator between modules can also cause a performance hit as they are always communicating indirectly. Because of the nature of loose coupling, it's difficult to establish how a system might react by only looking at the broadcasts.
+- **Improves communication**: It reduces the communication channels needed between objects or components in a system from many to many to just many to one.
+- **Single point of failure**: It can introduce a single point of failure. Placing a Mediator between modules can also cause a performance hit as they are always communicating indirectly. Because of the nature of loose coupling, it's difficult to establish how a system might react by only looking at the broadcasts.
+
+<br>
+
+## References
+
+- [Learning JavaScript Design Patterns | Mediator Pattern](https://www.patterns.dev/posts/classic-design-patterns/#mediatorpatternjavascript)
+- [Patterns.dev | Mediator Pattern](https://www.patterns.dev/posts/mediator-pattern/)
